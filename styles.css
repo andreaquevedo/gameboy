@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: bisque
+}
+
+.gameboy-container{
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    height: 450px;
+    width: 280px;
+    border: 2px solid black;
+    border-radius: 10px 10px 70px 10px;
+    background-color: #e8e0da;
+
+}
+
+.grey-bg{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 200px;
+    width: 230px;
+    border: 2px solid black;
+    border-radius: 15px 15px 50px 15px;
+    background-color: #848190;
+}
+
+.purple-line{
+    position: relative;
+    top: 4px;
+    left: 10px;
+    height: 2px;
+    width: 200px;
+    background-color: #88114a;
+    margin-bottom: 5px;
+}
+
+.blue-line{
+    position: relative;
+    top: 4px;
+    left: 10px;
+    height: 2px;
+    width: 200px;
+    background-color: #101673;
+}
+
+.text-matrix{
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    padding: 0px 4px 0px 4px;
+    background-color: #848190;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.screen{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: #616d01;
+    box-shadow: 0px 1px 5px 2px inset;   
+}
+
+.circle{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    height: 8px;
+    width: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px inset;
+}
+
+.battery{
+    position: absolute;
+    top: 90px;
+    left: 2px;
+    padding-top: 2px;
+    background-color: #848190;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.text-nintendo{
+    position: relative;
+    top: 30px;
+    left: 15px;
+    display: inline-block;
+    color: #101673;
+    background-color: #e8e0da;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.text-nintendo span{
+    background-color: #e8e0da;
+}
+
+.text-nintendo span sub{
+    background-color: #e8e0da;
+}
+
+.cross{
+    position: absolute;
+    top: 280px;
+    left: 50px;
+}
+
+.cross-y{
+    height: 55px;
+    width: 20px;
+    background-color: #1b2423;
+    border-radius: 4px;
+
+}
+
+.cross-x{
+    position: absolute;
+    top: 17px;
+    left: -17px;
+    height: 20px;
+    width: 55px;
+    background-color: #1b2423;
+    border-radius: 4px;
+}
+
+.cross-o{
+    position: absolute;
+    bottom: 18px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #1b2423;
+    box-shadow: 0px 1px 3px 4px inset;
+}
+
+.container-buttons{
+    position: relative;
+    top: 40px;
+    left: 160px;
+    height: 45px;
+    width: 105px;
+    background-color: #c5b7aca6;
+    border-radius: 30px 30px 30px 30px;
+    transform: rotate(-30deg);
+    /* box-shadow: 0px 0.5px 1px inset; */
+
+}
+
+.b{
+    position: relative;
+    top: 4px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #88114a;
+    box-shadow: 0px 0px 3px 0px inset;
+}
+
+.a{
+    position: absolute;
+    top: 4px;
+    left: 60px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #88114a;
+    box-shadow: 0px 0px 3px 0px inset;
+}
+
+.container-buttons span{
+    position: relative;
+    top: 40px;
+    left: 15px;
+    display: inline-block;
+    color: #101673;
+    background-color: #e8e0da;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.c-select{
+    position: relative;
+    top: 90px;
+    left: 70px;
+    height: 16px;
+    width: 46px;
+    border-radius: 10px;
+    background-color: #c5b7aca6;
+    transform: rotate(-30deg);
+}
+
+.select{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height: 10px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #848190;
+    box-shadow: 0px 0px 3px 0px inset;
+}
+
+.c-start{
+    position: relative;
+    top: 85px;
+    left: 112px;
+    height: 16px;
+    width: 46px;
+    border-radius: 10px;
+    background-color: #c5b7aca6;
+    transform: rotate(-30deg);
+}
+
+.start{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height: 10px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #848190;
+    box-shadow: 0px 0px 3px 0px inset;
+}
+
+.select span{
+    position: relative;
+    top: 10px;
+    color: #101673;
+    background-color: #e8e0da;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.start span{
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: #101673;
+    background-color: #e8e0da;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sound{
+    position: relative;
+    bottom: -90px;
+    left: 200px;
+    height: 42px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #c5b7aca6;
+    transform: rotate(-35deg);
+    display: inline-block;
+
+}
+
+
+.line-one{
+    height: 40px;
+    width: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+}
+
+.line-two{
+    position: relative;
+    bottom: 40px;
+    left: 3px;
+    height: 40px;
+    width: 5px;
+    margin-left: 6px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+}
+
+.line-three{
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    height: 40px;
+    width: 5px;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+
+}
+
+.line-four{
+    position: relative;
+    bottom: 120px;
+    left: 20px;
+    height: 40px;
+    width: 5px;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+
+}
+
+.line-five{
+    position: relative;
+    bottom: 160px;
+    left: 30px;
+    height: 40px;
+    width: 5px;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+
+}
+
+.line-six{
+    position: relative;
+    bottom: 200px;
+    left: 40px;
+    height: 40px;
+    width: 5px;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px inset;
+
+}
